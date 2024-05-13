@@ -40,7 +40,7 @@
     <div style="width: 20%;">
         <form method="get">
             {{ filter.form|crispy }}
-            <input class="btn btn-danger w-100" type="submit" value="Wolf Filter" />
+            <input class="btn btn-danger w-100" type="submit" value="Roomie Filter" />
         </form>
     </div>
 
@@ -111,7 +111,7 @@
                         </div>
                         <div class="modal-body">
                             <div>
-                                <b>Email: </b>{{profile.user.email}}<br>
+                                <!-- <b>Email: </b>{{profile.user.email}}<br> --> <b>E-mail: </b><a href="mailto:{{ profile.user.email }}">{{ profile.user.email }}</a><br>
                             </div>
                             <div>
                                 <b>Bio: </b>{{profile.bio}}<br>

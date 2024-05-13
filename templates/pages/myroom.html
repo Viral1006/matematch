@@ -107,7 +107,7 @@
                         </div>
                         <div class="modal-body">
                             <div>
-                                <b>Email: </b>{{profile.user.email}}<br>
+                                <!-- <b>E-mail: </b>{{profile.user.email}}<br> -->  <b>E-mail: </b><a href="mailto:{{ profile.user.email }}">{{ profile.user.email }}</a><br>
                             </div>
                             <div>
                                 <b>Bio: </b>{{profile.bio}}<br>
